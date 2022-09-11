@@ -9,6 +9,7 @@
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
+  overflow: hidden;
   &.active {
     background: #24293e;
     color: #fff;
