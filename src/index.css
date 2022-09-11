@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto+Serif:opsz@8..144&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+  font-family: "Dancing Script", cursive;
+}
+p {
+  font-family: "Roboto Serif", serif;
+}

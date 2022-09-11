@@ -1,0 +1,70 @@
+.app__nav {
+  gap: 2rem;
+  z-index: 10;
+  color: #e9e9eb;
+  position: absolute;
+  width: fit-content;
+  right: 5%;
+  top: 5%;
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+  }
+  .app__nav-holder {
+    .app__navigation {
+      width: 40px;
+      height: 40px;
+      place-self: flex-end;
+      position: relative;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.5s;
+      transition-delay: 0.5s;
+      &.app__navigation-acitve {
+        width: 120px;
+        height: 120px;
+        transition-delay: 0s;
+
+        span {
+          transform: translate(calc(35px * var(--x)), calc(35px * var(--y)));
+          width: 30px;
+          height: 30px;
+
+          a,
+          div {
+            color: #fff;
+            font-size: 1rem;
+            transform: scale(1);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+      span {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #24293e;
+        border-radius: 50%;
+        transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+        transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+        transition-delay: calc(0.1s * var(--i));
+        &.dark {
+          background: #fff;
+        }
+        a,
+        div {
+          transition: 0.5;
+          font-size: 0rem;
+          transform: scale(0);
+        }
+      }
+    }
+  }
+}

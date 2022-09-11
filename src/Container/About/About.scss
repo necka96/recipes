@@ -1,0 +1,89 @@
+.app__about-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .app__about {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 4rem;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+    .app__text {
+      grid-column: span 12;
+    }
+    .app__about-carousel {
+      gap: 2rem;
+      position: relative;
+      padding: 0 4rem;
+      .left,
+      .right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      .left {
+        left: -2.5rem;
+      }
+      .right {
+        right: -2.5rem;
+      }
+      img {
+        grid-column: span 4;
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+      }
+      .mobile {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      padding: 1rem;
+      .app__about-carousel {
+        padding: 0 4rem;
+        .left {
+          left: 0;
+        }
+        .right {
+          right: 0;
+        }
+        img {
+          grid-column: span 4;
+
+          // &:nth-child(3) {
+          //   display: none;
+          // }
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .app__about-carousel {
+        padding: 0;
+        .left,
+        .right {
+          display: none;
+        }
+        .mobile {
+          display: block;
+          position: absolute;
+          bottom: 5%;
+          right: 5%;
+        }
+        img {
+          grid-column: span 12;
+          display: none;
+          &:nth-child(1) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

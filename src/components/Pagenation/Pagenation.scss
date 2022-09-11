@@ -1,0 +1,30 @@
+.app__pagenation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  .app__pagenation-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #b5e6d8;
+    color: #2f3651;
+    font-weight: 800;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #2f3651;
+      color: #fff;
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+    }
+    &.active {
+      background-color: #2f3651;
+      color: #fff;
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+    }
+  }
+}

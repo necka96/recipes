@@ -1,0 +1,13 @@
+.app__recipes-sec {
+  flex-direction: column;
+  padding: 4rem;
+  .app__recipes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  @media screen and (max-width: 843px) {
+    padding: 1rem;
+  }
+}
